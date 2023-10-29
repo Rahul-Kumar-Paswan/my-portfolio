@@ -1,0 +1,164 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background image and styles */
+.App {
+  background-image: url('./assets/background');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add your specific styles for the header, logo, navigation, and social links */
+
+/* Add styles for the home, projects, about, and contact components */
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 36px;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.link {
+  margin-right: 20px; /* Adjust the margin to your preferred spacing */
+}
+
+.social-links a {
+  margin-right: 20px; /* Adjust the margin to your preferred spacing */
+}
+
+
+.cta-buttons a {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta-buttons a:hover {
+  background-color: #555;
+}
+
+
+/* App.css */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+  width: 100vw;
+}
+
+.leftside {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.rightside {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+/* App.css */
+/* ... (previous styles) */
+
+/* Update styles for the menu items */
+.menu-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #333;
+  /* top: 100%; 
+  left: 50%; 
+  bottom: 0%;
+  right: 15%; */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: fit-content;
+}
+
+/* .Header .menu-items{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  width: fit-content;
+} */
+
+.menu-items.visible {
+  display: flex;
+}
+
+.menu-items li {
+  margin-bottom: 20px; /* Adjust the margin to your preferred spacing */
+}
+
+.menu-items a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ... (previous styles) */
+
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+  }
+  .menu-items.visible {
+    display: flex;
+  }
+  .menu-items li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
