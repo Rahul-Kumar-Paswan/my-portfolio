@@ -2,20 +2,22 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif; /* Fallback font family */
 }
 
 /* Set background image and styles */
 .App {
-  background-image: url('./assets/background');
+  background-image: url('./assets/background1.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  color: #fff;
+  color: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'studiofeixen-variable', 'studiofeixen', 'Arial', 'Helvetica', sans-serif;/* Set your desired font family */
 }
 
 /* Add your specific styles for the header, logo, navigation, and social links */
@@ -25,7 +27,7 @@ body {
   text-align: center;
 }
 
-.home h1 {
+.home h2 {
   font-size: 36px;
 }
 
@@ -41,88 +43,47 @@ body {
   margin-right: 20px; /* Adjust the margin to your preferred spacing */
 }
 
-
 .cta-buttons a {
   margin: 10px;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
   text-decoration: none;
+  font-family: 'studiofeixen-variable', 'studiofeixen', 'Arial', 'Helvetica', sans-serif;/* Set your desired font family */
 }
 
 .cta-buttons a:hover {
   background-color: #555;
 }
 
-
-/* App.css */
+/* Add font-family to the header and other components as needed */
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   padding: 10px 20px;
-  color: #fff;
+  color: hsl(0, 0%, 0%);
   width: 100vw;
+  font-family: 'studiofeixen-variable', 'studiofeixen', 'Arial', 'Helvetica', sans-serif;/* Set your desired font family */
 }
-
-.leftside {
-  display: flex;
-  align-items: flex-start; /* Align items to the top */
-}
-
-.logo a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.rightside {
-  display: flex;
-  align-items: center;
-}
-
-.menu-toggle {
-  background-color: #444;
-  color: #fff;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: 18px;
-}
-
-/* App.css */
-/* ... (previous styles) */
 
 /* Update styles for the menu items */
 .menu-items {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
   position: absolute;
   background-color: #333;
-  /* top: 100%; 
-  left: 50%; 
-  bottom: 0%;
-  right: 15%; */
   transform: translate(-50%, -50%);
   z-index: 1;
   width: fit-content;
+  font-family: 'studiofeixen-variable', 'studiofeixen', 'Arial', 'Helvetica', sans-serif;/* Set your desired font family */
 }
-
-/* .Header .menu-items{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  overflow: hidden;
-  width: fit-content;
-} */
 
 .menu-items.visible {
   display: flex;
@@ -135,10 +96,8 @@ body {
 .menu-items a {
   color: #fff;
   text-decoration: none;
+  font-family: 'studiofeixen-variable', 'studiofeixen', 'Arial', 'Helvetica', sans-serif;/* Set your desired font family */
 }
-
-/* ... (previous styles) */
-
 
 /* Media query for responsive design */
 @media (max-width: 768px) {
